@@ -114,7 +114,7 @@ const guiVenus = gui.addFolder('Venus');
 const guiEarth = gui.addFolder('Earth');
 const guiMars = gui.addFolder('Mars');
 
-guiCamera.add(controls, 'switchCamera');
+guiCamera.add(controls, 'switchCamera').name('Switch Camera Type');
 guiCamera.add(controls, 'perspective').listen();
 
 guiMercury.add(controls, 'mercuryRotationSpeed', 0, 0.1, 0.001).name('Rotation Speed');
